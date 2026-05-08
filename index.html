@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCode - Master C & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <button id="homeBtn" class="active"> Home</button>
+        <button id="cNavBtn"> C Programming</button>
+        <button id="jsNavBtn"> JavaScript</button>
+        <button id="aboutBtn"> About</button>
+    </div>
+
+    <div class="hero" id="home">
+        <h1>Learn<span>Code</span></h1>
+        
+        <div class="funny-quote-container">
+            <span class="funny-icon"></span>
+            <div class="funny-text">"I told my computer I needed a break, and now it won't stop sending me vacation ads."</div>
+            <div class="funny-author">— Anonymous Programmer</div>
+        </div>
+    </div>
+
+    <div class="boxes-container">
+
+        <div class="big-box c-box" onclick="scrollToSection('cSection')">
+            <img class="card-image" src="https://images.unsplash.com/photo-1516116216624-53e69720be55?w=400&h=200&fit=crop" alt="C Programming" onerror="this.src='https://placehold.co/400x200/2c3e50/white?text=C+Programming'">
+            <div class="card-content">
+                <div class="box-icon"></div>
+                <h2>C Programming</h2>
+                <p>Learn the mother of all programming languages. Master pointers, memory management, and system programming.</p>
+                <div class="funny-mini-quote">
+                     "C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows away your whole leg." — Bjarne Stroustrup
+                </div>
+                <button class="start-btn" onclick="event.stopPropagation(); scrollToSection('cSection')">Start Learning →</button>
+            </div>
+        </div>
+
+        <div class="big-box js-box" onclick="scrollToSection('jsSection')">
+            <img class="card-image" src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=200&fit=crop" alt="JavaScript" onerror="this.src='https://placehold.co/400x200/f39c12/white?text=JavaScript'">
+            <div class="card-content">
+                <div class="box-icon"></div>
+                <h2>JavaScript</h2>
+                <p>Master the language of the web. Build interactive websites and modern web applications.</p>
+                <div class="funny-mini-quote">
+                     "JavaScript: The language where 0.1 + 0.2 ≠ 0.3 and we just accept it." — Every JS Developer
+                </div>
+                <button class="start-btn" onclick="event.stopPropagation(); scrollToSection('jsSection')">Start Learning →</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cSection" class="topics-section">
+        <h2 class="section-title">⚡ <span>C Programming</span> Tutorials</h2>
+        <div class="topics-wrapper">
+            <div class="topics-sidebar">
+                <h3> Topics</h3>
+                <div id="cTopicList"></div>
+            </div>
+            <div class="topic-content" id="cTopicContent"></div>
+        </div>
+    </div>
+
+    <div id="jsSection" class="topics-section">
+        <h2 class="section-title"> <span>JavaScript</span> Tutorials</h2>
+        <div class="topics-wrapper">
+            <div class="topics-sidebar">
+                <h3> Topics</h3>
+                <div id="jsTopicList"></div>
+            </div>
+            <div class="topic-content" id="jsTopicContent"></div>
+        </div>
+    </div>
+
+    <div id="aboutSection" class="about-section">
+        <div class="about-container">
+            <h2> About LearnCode</h2>
+            <p>This project is submitted to <strong>Dr. Abhishek Sir</strong> as part of our Web Development course.</p>
+            
+            <div class="professor-section">
+                <img class="profile-circle professor-img" 
+                     src="WhatsApp Image 2026-05-04 at 10.41.24.jpeg" 
+                     alt="Dr. Abhishek"
+                     onerror="this.src='https://placehold.co/120x120/2c3e50/white?text=Dr'">
+                <h3>Dr. Abhishek</h3>
+                <div class="professor-title">Professor & Mentor</div>
+                <div class="professor-desc">Our respected guide who inspired us to create this learning platform. Thank you for your constant support and valuable guidance!</div>
+            </div>
+
+            <div class="students-grid">
+
+                <div class="student-card">
+                    <img class="profile-circle" 
+                         src="WhatsApp Image 2026-05-04 at 10.44.54.jpeg" 
+                         alt="Priya"
+                         onerror="this.src='https://placehold.co/100x100/e67e22/white?text=P'">
+                    <h3 class="student-name">Priya</h3>
+                    <div class="student-role"> Frontend Developer & Designer</div>
+                    <div class="student-bio">
+                        Hi! I'm Priya. I built this website from scratch - designed the UI, wrote the HTML/CSS, and implemented all the interactive features. I love creating beautiful and functional web experiences. This project helped me learn how to build a complete learning platform!
+                    </div>
+                </div>
+
+                <div class="student-card">
+                    <img class="profile-circle" 
+                        
+                         alt="Radha Saluja"
+                         onerror="this.src='https://placehold.co/100x100/d4a373/white?text=R'">
+                    <h3 class="student-name">Radha Saluja</h3>
+                    <div class="student-role"> Content Researcher & Tester</div>
+                    <div class="student-bio">
+                        Hey! I'm Radha. I was responsible for researching all the C and JavaScript topics, writing the theory content, creating the MCQ questions, and testing the entire website. I made sure all the code examples are correct and the quizzes are helpful for learners!
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <p><strong> Project Completed:</strong> May 2026</p>
+                <p><strong> Team Members:</strong> Priya (Developer) & Radha Saluja (Researcher)</p>
+                <p><strong> Submitted To:</strong> Dr. Abhishek Sir</p>
+                <p><strong> Project Goal:</strong> To create an interactive learning platform for C and JavaScript programming with tutorials, code examples, and quizzes.</p>
+                <p><strong> Special Thanks:</strong> Dr. Abhishek Sir for his guidance and support throughout this project!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 LearnCode | Created by Priya & Radha | Submitted to Dr. Abhishek Sir</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
